@@ -27,7 +27,7 @@
 }
 
 /* Default hidden text state */
-.ws-wheel-slider .swiper-slide .ws-wheel-heading,
+.ws-wheel-slider .swiper-slide .slide-heading,
 .ws-wheel-slider .swiper-slide .ws-wheel-category {
   transform: translateY(140%);
   -webkit-transform: translateY(140%);
@@ -43,7 +43,7 @@
 }
 
 /* Delay for heading */
-.ws-wheel-slider .swiper-slide .ws-wheel-heading {
+.ws-wheel-slider .swiper-slide .slide-heading {
   transition-delay: 0.8s;
 }
 
@@ -57,7 +57,7 @@
 }
 
 /* Active slide text visible */
-.ws-wheel-slider .swiper-slide.swiper-slide-active .ws-wheel-heading,
+.ws-wheel-slider .swiper-slide.swiper-slide-active .slide-heading,
 .ws-wheel-slider .swiper-slide.swiper-slide-active .ws-wheel-category {
   transform: translateY(0%);
   -webkit-transform: translateY(0%);
