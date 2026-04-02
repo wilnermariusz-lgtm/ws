@@ -1,1 +1,28 @@
+<!-- SwiperJS Script Embed -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+<!-- Initialize Wheel Slider -->
+<script>
+$(document).ready(function () {
+  var wheelSlider = new Swiper('.ws-wheel-slider', {
+    effect: 'coverflow',
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    allowTouchMove: true,
+    speed: 1000,
+    loop: true,
+    mousewheel: true,
+    navigation: {
+      nextEl: '.ws-wheel-next',
+      prevEl: '.ws-wheel-prev',
+    },
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 150,
+      modifier: 1,
+      slideShadows: true,
+    },
+  });
+});
+</script>
