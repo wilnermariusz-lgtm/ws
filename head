@@ -1,0 +1,105 @@
+<style>
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  pointer-events: none;
+}
+
+/* Glow on category text */
+.ws-wheel-category {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+  animation: ws-wheel-glow-pulse 2s infinite alternate;
+}
+
+@keyframes ws-wheel-glow-pulse {
+  from {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+  }
+  to {
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
+  }
+}
+
+/* Swiper base wrapper */
+.ws-wheel-slider .swiper-wrapper {
+  transform-style: preserve-3d;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+/* Default hidden text state */
+.ws-wheel-slider .swiper-slide .ws-wheel-heading,
+.ws-wheel-slider .swiper-slide .ws-wheel-category {
+  transform: translateY(140%);
+  -webkit-transform: translateY(140%);
+  -moz-transform: translateY(140%);
+  -ms-transform: translateY(140%);
+  -o-transform: translateY(140%);
+  opacity: 0;
+}
+
+/* Delay for category */
+.ws-wheel-slider .swiper-slide .ws-wheel-category {
+  transition-delay: 0.3s;
+}
+
+/* Delay for heading */
+.ws-wheel-slider .swiper-slide .ws-wheel-heading {
+  transition-delay: 0.8s;
+}
+
+/* Active slide position */
+.ws-wheel-slider .swiper-slide.swiper-slide-active {
+  transform: rotate(0deg) translateY(0px) !important;
+  -webkit-transform: rotate(0deg) translateY(0px) !important;
+  -moz-transform: rotate(0deg) translateY(0px) !important;
+  -ms-transform: rotate(0deg) translateY(0px) !important;
+  -o-transform: rotate(0deg) translateY(0px) !important;
+}
+
+/* Active slide text visible */
+.ws-wheel-slider .swiper-slide.swiper-slide-active .ws-wheel-heading,
+.ws-wheel-slider .swiper-slide.swiper-slide-active .ws-wheel-category {
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  opacity: 1;
+}
+
+/* Previous slide */
+.ws-wheel-slider .swiper-slide.swiper-slide-prev {
+  transform: rotate(-10deg) translateY(100px) !important;
+  -webkit-transform: rotate(-10deg) translateY(100px) !important;
+  -moz-transform: rotate(-10deg) translateY(100px) !important;
+  -ms-transform: rotate(-10deg) translateY(100px) !important;
+  -o-transform: rotate(-10deg) translateY(100px) !important;
+}
+
+/* Next slide */
+.ws-wheel-slider .swiper-slide.swiper-slide-next {
+  transform: rotate(10deg) translateY(100px) !important;
+  -webkit-transform: rotate(10deg) translateY(100px) !important;
+  -moz-transform: rotate(10deg) translateY(100px) !important;
+  -ms-transform: rotate(10deg) translateY(100px) !important;
+  -o-transform: rotate(10deg) translateY(100px) !important;
+}
+
+/* Second next slide */
+.ws-wheel-slider .swiper-slide.swiper-slide-next + .swiper-slide {
+  transform: rotate(20deg) translateY(400px) !important;
+  -webkit-transform: rotate(20deg) translateY(400px) !important;
+  -moz-transform: rotate(20deg) translateY(400px) !important;
+  -ms-transform: rotate(20deg) translateY(400px) !important;
+  -o-transform: rotate(20deg) translateY(400px) !important;
+}
+
+/* Default state for all slides */
+.ws-wheel-slider .swiper-slide {
+  transform: rotate(-20deg) translateY(400px) !important;
+  -webkit-transform: rotate(-20deg) translateY(400px) !important;
+  -moz-transform: rotate(-20deg) translateY(400px) !important;
+  -ms-transform: rotate(-20deg) translateY(400px) !important;
+  -o-transform: rotate(-20deg) translateY(400px) !important;
+}
+</style>
